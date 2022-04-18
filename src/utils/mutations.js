@@ -29,14 +29,14 @@ export const ADD_ORDER = gql`
   }
 `;
 
-export const ADD_USER = gql`
-  mutation addUser(
+export const SIGN_UP = gql`
+  mutation signUp(
     $fullName: String!
     $email: String!
     $phone:String!
     $password: String!
   ) {
-    addUser(
+    signUp(
       fullName: $firstName
       email: $email
       phone:$phone

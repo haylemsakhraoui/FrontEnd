@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
-import { ADD_USER } from '../utils/mutations';
+import SIGN_UP from '../utils/mutations';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', phone: '', password: '' });
-  const [addUser] = useMutation(ADD_USER);
+  const [signUp] = useMutation(SIGN_UP);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    const mutationResponse = await addUser({
+    const mutationResponse = await signUp({
       variables: {
         fullName: formState.fullName,
         email: formState.email,

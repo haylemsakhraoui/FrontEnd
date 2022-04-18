@@ -23,7 +23,7 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row">
-          <li className="mx-1 btn btn-info ">
+          <li className="mx-1 btn btn-dark ">
             <Link to="/signup">
               Signup
             </Link>
