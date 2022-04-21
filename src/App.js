@@ -43,12 +43,12 @@ function App() {
           <StoreProvider>
             <Nav />
             <Routes>
-              <Route exact path="/success" element={Success} />
-              <Route exact path="/" element={Home} />
-              <Route exact path="/login" element={Login} />
-              <Route exact path="/signup" element={Signup} />
-              <Route exact path="/orderHistory" element={OrderHistory} />
-              <Route element={NoMatch} />
+              <Route exact path="/success" element={<Success/>} />
+              <Route exact path="/" element={<Home/>} />
+              <Route exact path="/login" element={<Login/>} />
+              <Route exact path="/signup" element={<Signup/>} />
+              <Route exact path="/orderHistory" element={<OrderHistory/>} />
+              <Route element={<NoMatch/>} />
             </Routes>
           </StoreProvider>
       </Router>
